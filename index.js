@@ -1,10 +1,13 @@
 import express from 'express';
 import { bookingRouter } from './routes/booking-routes.js';
+import cors from 'cors'
+
 
 
 //create an express app
 const app = express();
 
+app.use(cors()) 
 //Define routes
 app.use(bookingRouter);
 
