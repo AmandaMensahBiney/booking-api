@@ -24,8 +24,8 @@ const bookingSchema = new Schema({
 
     email :{
         type: String,
-        unique: true,
+        // unique: true,
     },
 });
 
-export const booking = model('Booking', bookingSchema)
+export const BookingModel = model('Booking', bookingSchema);
